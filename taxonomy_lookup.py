@@ -31,7 +31,7 @@ with open('db_taxonomy.csv', mode='r') as data_file:
         data[key] = value
 
 # Open the keys file again, this time in write mode
-with open('blastn_taxonomy_modified.csv', mode='w', newline='') as keys_file:
+with open('blastn_taxonomy.csv', mode='w', newline='') as keys_file:
     # Create a CSV writer object and set the delimiter to tabs
     keys_writer = csv.writer(keys_file, delimiter=',')
 
