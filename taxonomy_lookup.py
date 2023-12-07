@@ -4,7 +4,7 @@
 import csv
 
 # Open the CSV file containing the lookup keys in read mode
-with open('taxonomy.csv', mode='r') as keys_file:
+with open('~/Downloads/taxonomy.csv', mode='r') as keys_file:
     # Create a CSV reader object and set the delimiter to tabs
     keys_reader = csv.reader(keys_file, delimiter=',')
 
@@ -17,7 +17,7 @@ with open('taxonomy.csv', mode='r') as keys_file:
             rows.append(row)
 
 # Open the CSV file containing the database to be looked up in read mode
-with open('db_taxonomy.csv', mode='r') as data_file:
+with open('~/Downloads/db_taxonomy.csv', mode='r') as data_file:
     # Create a CSV reader object and set the delimiter to tabs
     data_reader = csv.reader(data_file, delimiter=',')
 
