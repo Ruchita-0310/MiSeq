@@ -13,7 +13,7 @@ with open('taxonomy.csv', mode='r') as keys_file:
         if len(row[1].split('~')) > 1:
             rows.append(row)
 
-# Open the CSV file containing the data to be looked up in read mode
+# Open the CSV file containing the database to be looked up in read mode
 with open('db_taxonomy.csv', mode='r') as data_file:
     # Create a CSV reader object and set the delimiter to tabs
     data_reader = csv.reader(data_file, delimiter=',')
